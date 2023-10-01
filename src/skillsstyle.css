@@ -258,6 +258,12 @@ final article of resume links extended below in a banner form*/
     header, footer {
         font-size: 1.5em;
     }
+    h1, h2, {
+        font-size:2rem
+    }
+   
+
+
 /*style changes to final article into row format and color changes 
 to make format easy to navigate*/
     #resume {

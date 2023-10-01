@@ -62,7 +62,7 @@ main {
     justify-content: center;
     width: 100%;
     min-height: 85vh;
-    background-image: url(/images/bio-background.jpeg);
+    background-image: url(/assets/bio-background.jpeg);
     background-size:contain;
     background-repeat: repeat-y;
     opacity: .6;

@@ -62,7 +62,7 @@ main {
     justify-content: center;
     width: 100%;
     min-height:70vh;
-    background-image: url(/images/blog-start-background.jpeg);
+    background-image: url(/assets/blog-start-background.jpeg);
     background-size: contain;
     opacity: 0.7;
     
