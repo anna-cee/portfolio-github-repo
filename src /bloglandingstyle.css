@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Andale Mono, AndaleMono, monospace;
+
+}
+
+body {
+    min-height: 100vh;
+
+
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: #06031d;  
+}
+
+.homelink {
+    color:#ee6df7;
+    font-size: 1em;
+}
+.gohome {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.headernav li {
+    float: right;
+    padding: 5vh 2vw 2vw 2vh;
+    border-right: 2px solid #ee6df7;
+}
+
+.headernav li:first-child {
+    border-right: none;
+}
+
+.headernav li a {
+    color: #F7DDFF;
+    text-decoration: none;
+}
+
+.headernav li a:hover {
+    color: #f7ef06f9;
+}
+
+.headernav li a:visited {
+    color:#0dd99f;
+}
+  
+/*one main section styled with tiled id photos as backgroundimage. 
+opacity drains impact of blacks, increases readability*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height:70vh;
+    background-image: url(/images/blog-start-background.jpeg);
+    background-size: contain;
+    opacity: 0.7;
+    
+}
+/*banner styled separately, with letter tiles to reflect picture boxes in skills.
+These are styled as headerletters.*/
+.blog-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3%;
+    padding-top: 3%;;  
+}
+
+.headerletter {
+    width: 20%;
+    height: auto;
+    box-shadow: 8px 8px 8px #ee6df7;
+    margin: 2%;
+    border: solid 12px #0dd99f;
+    background-color: #fcfbf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% ;
+    animation: picswing 1s;
+    
+}
+.headerletter h1{
+    font-size: 4em;
+    margin: 3vh;
+    color: #0dd99f;
+    text-shadow: 10px 10px #f7ef06f9;
+    margin: 0;
+}
+
+/* container for bog entries in color separates it from background.
+Creates depth and contrast with the monochrome.*/
+.blog-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    background-color: #f7ef0676;
+
+}
+/* first article container set aside for unique styling.
+set a subtitle box to transition from banner to content.
+transparent background and no image indicates its status
+as a subtitle, not a blog link. */
+#start{
+    padding: 2%;
+    background: none;
+    border: solid 1px #06031d;
+    
+}
+
+#start h2 {
+    color: #fcfbf6;
+    font-size: 2.7em;
+    font-weight: bolder;
+    text-shadow: 3px 3px #ee6df7;
+
+}
+
+/* repeated links to blog articles styled similarly here to show cohesion.
+bos shadows help to again lift them from the background and the container.*/
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height: auto;
+    margin:2%;
+    padding: 10%;
+    background-color: #0dd99f;
+    box-shadow: 10px 10px 10px #06031d;
+    
+}
+
+/* styles for blog article links*/
+article a {
+    font-size: 2em;
+    font-weight: bolder;  
+    text-decoration: none;
+    border-radius: 3%;
+    background-color: #fcfbf6;
+    padding: 10%;
+    margin-top: 5%;
+    color: #fcfbf6;
+    text-shadow: 2px 2px#df06ef;
+}
+/* color contrast on hover to highlight clickable link. */
+article a:hover {
+    color:#0dd99f;
+}
+
+a:visted {
+    color: #0dd99f;
+}
+/* image content for blogs previewed as circle logos here. */
+.logo {
+    height:8em;
+    width:9em;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+footer {
+    height: 10%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #06031d;  
+}
+
+
+.contact  li{
+    color: #0dd99f;
+    list-style-type: none;
+   
+}   
+.contact li a {
+    text-decoration: none;
+}
+
+@keyframes picswing {
+    0% {
+        rotate: 0deg;}
+    50%{
+        rotate: 20deg;}
+    100%{
+        rotate: 0deg;}
+}
+
+@media screen and (min-width: 800px){
+  
+   
+    .blog-box{
+        flex-direction: row;
+        align-items: flex-start;
+        
+    }
+    article {
+        max-width: 40%;
+
+    }
+    
+    header, footer {
+        font-size: 1.5em;
+    }
+}@media screen and (min-width: 1000px){
+  
+   
+    .blog-box{
+        flex-direction: row;
+        align-items: flex-start;
+        width: 90%;
+    }
+    #start{
+        min-width: 85%;
+    }
+    article {
+        padding:2%;
+        width: 25%;
+
+    }
+    
+    header, footer {
+        font-size: 1.5em;
+    }
+}

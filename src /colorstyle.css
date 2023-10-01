@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Andale Mono, AndaleMono, monospace;
+
+}
+
+body {
+    min-height: 100vh;
+    
+
+}
+/*universal header styling*/
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: #06031d;  
+}
+
+.homelink {
+    color:#ee6df7;
+    font-size: 1em;
+}
+.gohome {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.headernav li {
+    float: right;
+    padding: 5vh 2vw 2vw 2vh;
+    border-right: 2px solid #ee6df7;
+}
+
+.headernav li:first-child {
+    border-right: none;
+}
+
+.headernav li a {
+    color: #F7DDFF;
+    text-decoration: none;
+}
+
+.headernav li a:hover {
+    color: #f7ef06f9;
+}
+
+.headernav li a:visited {
+    color:#0dd99f;
+}
+  
+/*blog banner and title styled consistent with main blog content stylesheet.
+See "colorgrid" for point of difference*/
+.blog-banner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color:#fcfbf6;
+}
+
+.bloghead a {
+    font-size: 2em;
+    margin: 3vw;
+    color:#06031d;
+    text-shadow: 10px 10px #ee6df727;
+    text-decoration: none;
+}
+.bloghead a:hover {
+    color:#f7ef06f9;
+}
+
+#blogtitle h2 {
+    font-size: 4em;
+    margin: 3vh;
+    color:#0dd99f;
+    text-shadow: 10px 10px #f7ef06f9;
+}
+#blogtitle{
+    display:flex;
+    flex-direction: row;
+    color: #fcfbf6;
+    width:100%;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height:70vh;
+    background-color: #ee6df721 
+}
+/*opacity added to background color here to achieve desaturated look without affecting the colorgrid*/
+.blog-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: #0dd99fa8;
+    box-shadow: 10px 10px 10px #06031d;
+    padding: 5%;
+}
+/* colorgrid formatted with flexbox,
+using flex-grow:inherit to ensure grid expands with screen size.
+White border added to separarte colorgrid from background and shadowing */
+#colorgrid {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: inherit;
+    border: solid 5px #fcfbf6;
+    box-shadow: 10px 10px 10px #06031d;  
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+/*assigning height a vw value to maintain a square*/
+.box{
+    width: 15vw;
+    height: 15vw;
+}
+
+/*list of grid colors*/
+#a {
+    background-color: #f59e07;
+}
+#b {
+    background-color: rgb(227, 176, 34);
+}
+#c {
+    background-color: rgb(213, 217, 6);
+}
+#d {
+    background-color: rgb(159, 224, 6);
+}
+#e {
+    background-color: rgb(5, 217, 23);
+}
+
+#f {
+    background-color: rgb(247, 97, 4);
+}
+#g {
+    background-color: rgb(234, 120, 6);
+}
+#h {
+    background-color: rgb(186, 171, 7);
+}
+#i {
+    background-color: rgb(100, 180, 3);
+}
+#j {
+    background-color: rgb(6, 192, 30);
+}
+
+
+#k {
+    background-color: rgb(247, 47, 2);
+}
+#l {
+    background-color: rgba(220, 83, 48, 0.997);
+}
+#m {
+    background-color: rgb(160, 86, 63);
+}
+#n {
+    background-color: #5f805c;
+}
+#o {
+    background-color: #13832d;
+}
+
+
+#p {
+    background-color: #fc0543;
+   
+}
+#q {
+    background-color: #be4678;  
+}
+#r {
+    background-color: #97376d;   
+}
+
+#s {
+    background-color: #68497d;
+}
+
+#t {
+    background-color: #035740;  
+}
+
+
+#u {
+    background-color: #f90573;
+}
+#v {
+    background-color: #c01eb5;
+}
+#w {
+    background-color: #9c179e;
+}
+#x {
+    background-color: #5106ae;
+}
+#y {
+    background-color: #031564;
+}
+
+
+/*article styling consistent with blogcontent style*/
+article {
+    width: 90%;
+    height: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-radius: 5%;
+    background-color: #f6e6f8;
+    box-shadow: 10px 10px 10px #06031d;
+    
+
+}
+p {
+    padding: 5%;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+
+
+
+
+
+/* Same footer as throughout for consistent style, with home link added*/
+footer {
+    height: 10%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #06031d;  
+}
+
+
+.contact  li{
+    color: #0dd99f;
+    list-style-type: none;
+   
+}   
+.contact li a {
+    text-decoration: none;
+}
+
+/*media break only required from 1000px due to simple layout remaining coherent at small sizes
+Colorgrid max-widths specified to ensure square does not become rectangular on larger screens with landscape view*/
+
+@media screen and (min-width: 1000px){
+    .blog-box {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    
+    #colorgrid {
+        max-width: 37%;
+        margin: 0;
+    }
+
+    .box{
+        width: 7vw;
+        height: 7vw;
+
+    }
+     article {
+        max-width: 37%;
+        margin: 0
+     }
+
+     header, footer {
+        font-size: 1.5em;
+     }
+
+}

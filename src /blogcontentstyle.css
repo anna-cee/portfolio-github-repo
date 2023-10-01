@@ -1,0 +1,204 @@
+/* ALL BLOG ENTRIES EXCEPT COLOR
+use this style document*/ 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Andale Mono, AndaleMono, monospace;
+
+}
+
+body {
+    min-height: 100vh;
+}
+
+/*universal header styling*/
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: #06031d;  
+}
+
+.homelink {
+    color:#ee6df7;
+    font-size: 1em;
+}
+.gohome {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.headernav li {
+    float: right;
+    padding: 5vh 2vw 2vw 2vh;
+    border-right: 2px solid #ee6df7;
+}
+
+.headernav li:first-child {
+    border-right: none;
+}
+
+.headernav li a {
+    color: #F7DDFF;
+    text-decoration: none;
+}
+
+.headernav li a:hover {
+    color: #f7ef06f9;
+}
+
+.headernav li a:visited {
+    color:#0dd99f;
+}
+  
+/*blog banner styled separately from main to show nseparate fom text, 
+hover effect and return symbol to show link */
+.blog-banner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color:#fcfbf6;
+}
+
+.bloghead a {
+    font-size: 2em;
+    margin: 3vw;
+    color:#06031d;
+    text-shadow: 10px 10px #ee6df727;
+    text-decoration: none;
+}
+.bloghead a:hover {
+    color:#f7ef06f9;
+}
+
+/*blog title is same size and shadowing as banner but chagne in color for continuity*/
+#blogtitle h2 {
+    font-size: 4em;
+    margin: 3vh;
+    color:#0dd99f;
+    text-shadow: 10px 10px #f7ef06f9;
+}
+#blogtitle{
+    display:flex;
+    flex-direction: row;
+    color: #fcfbf6;
+    width:100%;
+}
+
+/* pink background to show main content area.
+content stacked vertically for mobile-first design*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #ee6df721 
+}
+/* green background box creates depth, color and frames entry*/
+.blog-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background-color: #0dd99f;
+    opacity: .6;
+    box-shadow: 10px 10px 10px #06031d;
+}
+
+/* styling or all image boxes and image content on blog.
+Each box with borders and shadows for style continuity 
+and also to create depth*/
+.image {
+    max-width: 85%;
+    margin: 3%;
+    border-radius: 20%;
+    box-shadow: 10px 10px 10px #06031d;
+    padding: 0;
+    
+}
+
+img {
+    width:100%;
+    height: 100%;
+    border-radius: 20%;
+    border-bottom: solid 3px #06031d;
+}
+
+/*styling for all article boxes and text content on blog */
+article {
+    width: 90%;
+    height: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-radius: 5%;
+    background-color: #f6e6f8;
+    box-shadow: 10px 10px 10px #06031d;
+
+}
+
+p {
+    padding: 5%;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+
+
+
+/* Same footer as throughout for consistent style, with home link added*/
+footer {
+    height: 10%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #06031d;  
+}
+
+
+.contact  li{
+    color: #0dd99f;
+    list-style-type: none;
+   
+}   
+.contact li a {
+    text-decoration: none;
+}
+
+
+/*media breaks - simple design that remains coherent up to 1000px, 
+after this the blogbox content organised horizontally*/
+
+@media screen and (min-width: 1000px){
+
+    .blog-box {
+        flex-direction: row;
+
+    }
+
+    .image {
+        max-width: 40vw;
+    }
+
+     article {
+        max-width: 40vw;
+     }
+
+     header, footer {
+        font-size: 1.5em;
+    }
+}
+

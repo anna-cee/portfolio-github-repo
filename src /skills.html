@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="skillsstyle.css" />
+    <title>Skills | Anna</title>
+  </head>
+  <body>
+      <!-- Header navigation component used on all pages to navigate from any page.-->
+      <!-- All header navs after homepage have home link added for easy return. -->
+    <header>
+      <div class="gohome">
+        <a class=homelink href="index.html">&#8884; home</a></li>
+      </div>
+      <ul class="headernav">
+        <li><a href="bio.html"> BIO</a></li>
+        <li><a href="skills.html"> SKILLS</a></li>
+        <li><a href="bloglanding.html"> BLOG</a></li>
+      </ul>
+    </header>
+<!-- Page title separated from main content with banner section.
+Banner portioned into title and graphics,-->
+    <banner class="skills-banner">
+      <div class="skillsimages">
+        <div><img id="skillpic" src="/images/look-up.jpg" alt="Hello it's Anna"/></div>
+        <div><img id="skillpic" src="/images/look-ahead.jpg" alt="Hello it's Anna"/></div>
+        <div><img id="skillpic" src="/images/look-surprise.jpg" alt="Hello it's Anna"/></div>
+      </div>
+      <div class="skillshead">
+        <div><h1>Skills</h1></div>
+      </div>
+    </banner>  
+    <!-- Main content divided into 4 sections, here called articles, as mostly comprise text. 
+    Each article has header and subordinating content in an unordered list but given own class name 
+    for individual styling, especially colour. -->
+    <main>
+        <article class="experience">
+          <h2>Experience</h2>
+          <ul class="list">
+            <li>My previous work life:
+              ESL Language Teacher</li>
+            <li>Translator German-English</li>
+            <li>Yoga teacher</li>
+          </ul>
+        </article>
+        
+        <article class="education">
+            <h2>Education</h2>
+            <ul class="list">
+                <li>BA Hons University of Melbourne </li>
+                <li>DELTA, Cambridge English </li>
+                <li>Coder Academy Bootcamp 2023</li> 
+            </ul>
+        </article>
+
+        <article class="languages">
+            <h2>Languages</h2>
+            <ul class="list">
+                <li>Current: HTML, CSS</li>
+                <li>To be acquired: Java Script, Python</li>
+            </ul>
+        </article>
+<!-- Final article in the group styled more as 2 groups of links.
+Here 1st list for resume link and 2nd for online links.
+Repetition of grouping here allows for consistent styling.
+First link has clickable pdf link! -->
+        <article id="resume">
+          <h2 class="listr">Resumé...</h2>
+          <ul class="listr">
+              <li>See full resumé <a href="/docs/anna-mock-resume.pdf" target="_blank">here!</a></li>
+          </ul>
+          
+          <h2 class="listr">Online...</h2>
+          <ul id="socialnav">
+            <li><a href="https://github.com/anna-cee"><img id="social-icons" src="/images/github-mark-white.png" alt="github"></a></li>
+            <li><a href="https://www.linkedin.com/in/anna-cox-63b003294"><img id="social-icons" src="/images/linkedin.png" alt="linkedin"></a></li>
+          </ul>
+        </article>
+     
+    </main>
+
+
+<!-- Footer repeated; home link added. -->
+    <footer>
+
+      <div class="contactbox">
+        <ul class="contact">
+          <li> CONTACT </li>
+          <li><a href="mailto:johndoe@fakeemail.com">anna@mailg.com</a></li>
+          <li><a href="tel:0421 234 567">+61 421 234 567</a></li>
+          <li>&#169;2023</li>
+        </ul>
+      </div>
+
+      <div class="gohomefooter">
+        <a class=homelink href="index.html">&#8884; home</a></li>
+      </div>
+    </footer>
+    
+</body>
+</html>

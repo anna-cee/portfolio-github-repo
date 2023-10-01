@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Andale Mono, AndaleMono, monospace;
+
+}
+
+/* min height added to make sure content fills screen, especiallyfor varyign phone models in portrait*/
+body {
+    min-height: 100vh;
+}
+/*header styling consistent across pages, notes as per first page*/
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: #06031d;  
+}
+
+.homelink {
+    color:#ee6df7;
+    font-size: 1em;
+}
+.gohome {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.headernav li {
+    float: right;
+    padding: 5vh 2vw 2vw 2vh;
+    border-right: 2px solid #ee6df7;
+}
+
+.headernav li:first-child {
+    border-right: none;
+}
+
+.headernav li a {
+    color: #F7DDFF;
+    text-decoration: none;
+}
+
+.headernav li a:hover {
+    color: #f7ef06f9;
+}
+
+.headernav li a:visited {
+    color:#0dd99f;
+}
+  
+
+/* main styled with background image to reduce complexity for overlay text
+opacity at this layer drains saturation from the background and makes yellow
+layer transparent. */
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 85vh;
+    background-image: url(/images/bio-background.jpeg);
+    background-size:contain;
+    background-repeat: repeat-y;
+    opacity: .6;
+}
+/* bright yellow background selected with opacity reduced for text readability */
+.biocontainer  {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: #f7ef06f9;
+    opacity: .8;
+    padding: 5%;
+
+}
+
+/*large page title with volor hover effect to draw it out from the background*/
+.bioheader{
+    margin-bottom:15%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.bioheader h1:hover {
+    color: #0dd99f;
+}
+
+/*bold text for text readability */
+.biotext p {
+    color:#06031d;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    font-weight: bold;
+
+}
+
+
+/* Same footer as throughout for consistent style, with home link added*/
+footer {
+    height: 10%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #06031d;  
+}
+
+.contact  li{
+    color: #0dd99f;
+    list-style-type: none;
+   
+}   
+.contact li a {
+    text-decoration: none;
+}
+    
+
+
+/* simplicity of layout is highly responsive to varying screen sizes.
+Only font size changes required for larger screen sizes. */
+
+@media screen and (min-width: 1000px){
+    .biotext p {
+        font-size: 1.5em;
+       
+    }
+    .bioheader {
+        font-size: 5rem;
+    }
+    header, footer {
+        font-size: 1.5em;
+    }
+}

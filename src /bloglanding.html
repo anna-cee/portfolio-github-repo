@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bloglandingstyle.css" />
+    <title>Blog | Anna</title>
+  </head>
+
+  <body>
+
+    <!-- Header navigation component used on all pages to navigate from any page.-->
+      <!-- All header navs after homepage have home link added for easy return. -->
+    <header>
+      <div class="gohome">
+        <a class=homelink href="index.html">&#8884; home</a></li>
+      </div>
+      <ul class="headernav">
+        <li><a href="bio.html"> BIO</a></li>
+        <li><a href="skills.html"> SKILLS</a></li>
+        <li><a href="bloglanding.html"> BLOG</a></li>
+      </ul>
+    </header>
+
+    
+  <!--All page contents incl banner inside main section to keep background image throughout.
+  Main area divided into two main parts, a banner section for the title 
+  and a secton container for the article links. -->
+    <main>
+ <!-- All banner content here. -->
+      <banner class="blog-banner">
+        <div class="headerletter"><h1>B</h1></div>
+        <div class="headerletter"><h1>L</h1></div>
+        <div class="headerletter"><h1>O</h1></div>
+        <div class="headerletter"><h1>G</h1></div>
+      </banner> 
+
+ <!-- This section, class "blog-box" contains 4 article dividers
+Each article container holding an image and bordered blog title
+which is a clickable link. This section allows me to arrange 
+blog contents independent of banner.-->
+      <section class="blog-box">
+        <article class="subtitle" id="start">
+          
+          <h2>MY RECENT BLOG ENTRIES...</h2>
+          
+        </article>
+        <!--Each article has a unique id for individual styling of its image and content -->
+
+        <article class="blog" id="language">
+          <img src="/images/wordcloud3.jpg" alt="color wheel" class="logo" />
+          
+          <a href="language.html">Language Learning</a>
+        </article>
+
+        <article class="blog" id="color">
+            
+          <img src="/images/colorwheel.jpg" alt="color wheel" class="logo" />
+          
+          <a href="color.html">Colour Mixing</a>
+        </article>
+
+
+        <article class="blog" id="story">
+          <img src="/images/typewriter.png" alt="color wheel" class="logo" />
+          
+          <a href="story.html">Story-telling</a>
+          
+        </article>
+        
+        
+
+        <article class="blog" id="circus">
+          <img src="/images/circuscatstack.jpeg" alt="color wheel" class="logo" />
+         
+            <a href="circus.html">Circus</a>
+          
+        </article>
+
+        <article class="blog" id="travel">
+          <img src="/images/barrier-reef.JPG" alt="color wheel" class="logo" />
+          <a href="travel.html">Travel</a>
+        </article>
+
+      </section>
+
+    </main>
+
+
+
+   <!-- Footer repeated; home link added. -->
+   <footer>
+
+    <div class="contactbox">
+      <ul class="contact">
+        <li> CONTACT </li>
+        <li><a href="mailto:johndoe@fakeemail.com">anna@mailg.com</a></li>
+        <li><a href="tel:0421 234 567">+61 421 234 567</a></li>
+        <li>&#169;2023</li>
+      </ul>
+    </div>
+
+    <div class="gohomefooter">
+      <a class=homelink href="index.html">&#8884; home</a></li>
+    </div>
+  </footer>
+  
+</body>
+</html>

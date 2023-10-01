@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Andale Mono, AndaleMono, monospace;
+
+}
+/* min height added to make sure content fills screen, especiallyfor varyign phone models in portrait*/
+body {
+    min-height: 100vh;
+}
+/*header styling consistent across pages*/
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: #06031d;  
+}
+
+.homelink {
+    color:#ee6df7;
+    font-size: 1em;
+}
+.gohome {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.headernav li {
+    float: right;
+    padding: 5vh 2vw 2vw 2vh;
+    border-right: 2px solid #ee6df7;
+}
+
+.headernav li:first-child {
+    border-right: none;
+}
+
+.headernav li a {
+    color: #F7DDFF;
+    text-decoration: none;
+}
+
+.headernav li a:hover {
+    color: #f7ef06f9;
+}
+
+.headernav li a:visited {
+    color:#0dd99f;
+}
+  
+
+
+/* banner styling: divisions here allow for styling text box and pic boxes differently in the same banner*/
+
+.skills-banner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color:#fcfbf6; 
+    padding: 2%;
+}
+/*monochrome images added for style consistency and mirroring resume format.
+box shadows added to images reflecting style contrast of monochrome with bright basics */
+.skillsimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;  
+}
+#skillpic {
+    height: 15vw;
+    width: 15vw;
+    margin: 1vw;
+    box-shadow: 10px 10px #f7ef06f9;
+    animation: picswing 3s;  
+}
+
+.skillshead h1 {
+    font-size: 2.8rem;
+    margin: 3vh;
+    color:#ee6df7;
+    text-shadow: 10px 10px #f7ef06f9;
+}
+
+/*layout of articles in main body specified, center alignment for max responsiveness*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #fcfbf6;
+    
+}
+/*styling for all article boxes*/
+article {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin:2%;
+    padding: 5% 10% 10% 10%;
+    border-radius: 20%;
+    
+}
+h2 {
+    padding-bottom: 15%;
+    padding-top:10%;
+    color: #fcfbf6;
+    font-size: 2em;
+
+}
+.list li{
+    padding-bottom: 5%;
+    color: #fcfbf6;
+    font-weight: bolder
+    
+}
+
+/*unique styling changes, mainly color differentiaton for boxes acc. to class*/
+
+.experience {
+    background-color: #ee6df7;
+    opacity: 0.6;
+    box-shadow: 10px 10px 10px #06031d;
+}
+.education {
+    background-color: #0dd99f;
+    opacity: 0.5;
+    box-shadow: 10px 10px 10px #06031d;
+}
+.languages {
+    background-color: #ee6df7;
+    opacity: 0.6;
+    box-shadow: 10px 10px 10px #06031d;
+
+}
+/*resume box styled as circle to highlight its difference as a springboard for links*/
+#resume {
+    background-color: #06031d;
+    opacity: 0.7;
+    border-radius:50%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 15px 15px 5px #ee6df7;
+}
+.listr li{
+    color:#fcfbf6;
+    list-style-type: none;
+}
+/* Color highlight and hover color effect added to highlight links */
+.listr li a {
+    color: #0dd99f;
+}
+
+.listr li a:hover {
+    color: #f7ef06f9
+}
+
+#socialnav {
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   width: 50%;
+   
+}
+
+#social-icons {
+    height:  100%;
+    width: 100%;
+    padding: 4%;
+} 
+
+/* bottom border color change added on hover to show icons are clickable links */
+#social-icons:hover {
+   border-bottom:solid 5px #0dd99f;
+}
+
+/* Same footer as throughout for consistent style, with home link added*/
+footer {
+    height: 10%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #06031d;  
+}
+
+.contact  li{
+    color: #0dd99f;
+    list-style-type: none;
+   
+}   
+.contact li a {
+    text-decoration: none;
+}
+
+/*animation added for banner pictures*/
+@keyframes picswing {
+    0% {
+        rotate: 0deg;}
+    50%{
+        rotate: -45deg;}
+    100%{
+        rotate: 0deg;}
+}
+
+
+
+
+/* 1st media break for large phones in landscape and tablet in portrait
+column list, wrapped into a block of 2 rows*/
+@media screen and (min-width: 800px){
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article {
+        max-width: 40%;
+    } 
+}
+/* 2nd media break for tablet in landscape or laptop and desktop.
+all articles into single row triplet
+final article of resume links extended below in a banner form*/
+@media screen and (min-width: 1000px){
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article {
+        max-width: 25%;
+        padding: 3%;
+        height: 25vw;
+    }
+    header, footer {
+        font-size: 1.5em;
+    }
+/*style changes to final article into row format and color changes 
+to make format easy to navigate*/
+    #resume {
+        border-radius: 3%;
+        min-width: 80%;
+        height: fit-content;
+        padding:0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+    #resume h2 {
+        color:#f7ef06f9;
+        padding: 5% 5%;
+    }
+
+    #socialnav {
+        height: 20%;
+        width: 10%;
+
+    }
+    header, footer {
+        font-size: 1.5em;
+    }
+    
+}

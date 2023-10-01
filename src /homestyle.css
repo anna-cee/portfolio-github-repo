@@ -1,0 +1,288 @@
+
+* {
+    box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+
+/* min height added to make sure content fills screen, especiallyfor varyign phone models in portrait*/
+body {
+    min-height: 100vh;
+}
+
+/* Header style repeated on each page */
+header{
+    display:flex;
+    flex-direction: column;
+    height: 10%;
+    width: 100vw;
+    background-color: #06031d;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+.headernav li {
+    float: right;
+    padding: 5vh 2vw 2vw 2vh;
+    border-right: 2px solid #ee6df7;
+}
+
+.headernav li:first-child {
+    border-right: none;
+}
+
+.headernav li a {
+    color: #F7DDFF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Color effects added to headernav links to highlight hovering and show when visited */
+
+.headernav li a:hover {
+    color: #f7ef06f9;
+}
+
+.heavernav li a:visited {
+    color:#0dd99f;
+}
+
+/* Main content creates page background style */
+main {
+    width: 100vw;
+    background-color: #06031d;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Section 1 style background and intro text */
+.center1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url(images/look-surprise.JPG);
+    background-size: cover; 
+    margin-bottom: 10%;
+    border-radius: 2%;
+    box-shadow: 10px 10px #010008;
+}
+/*text styles and effects to bring text out of the background with color */
+h2{
+    color:#0dd99f
+}
+#biotext:hover {
+    color:#0dd99f
+
+}
+.hometext {
+    color:  #FCFBF6;
+    margin-top: 3%;
+    margin-bottom: 3%;  
+}
+
+#hello {
+    width:80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 5%;
+    margin-right: 10%;   
+}
+
+/* here the home nav menu differentiated from intro text styles */
+#menu {
+    width:80%;
+    height: 30%;
+    display: block;
+    align-items: flex-start;  
+}
+
+#homelist li {
+    list-style-type: none;   
+}
+
+#homelist li a{ 
+    display: inline-block;
+    height: 5%;
+    font-size: 1em;
+    border: solid #fcfbf6;
+    margin: 2vh;
+    padding: 10px;
+    color: #FCFBF6;
+    text-decoration: none;
+}
+/*color effect to highlight nav menu*/
+#homelist li:hover {
+    background-color: #f7ef06f9;
+    opacity: 0.8;
+}
+/*Section 2 background styling*/
+.center2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-image: url(images/look-surprise-mirror.JPG);
+    background-size: cover; 
+    box-shadow: 10px 10px #f7ef06f9;
+    margin-bottom: 10%;
+    border-radius: 5%;
+}
+/* contact and socials info separated to allow for more more responsive formatting options. Also allows for color block effects to be added to each section*/
+#contact-text {
+    margin: 5%;
+    width: 80%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+  
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-end;   
+}
+
+#socials-text{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 5%;
+    align-self:flex-end;
+    align-items: flex-end;
+}
+
+#socials-box{
+    display: flex;
+    flex-direction: row;
+    align-self:flex-end;
+    justify-content: space-between;  
+}
+
+p a{
+    color: #fcfbf6;  
+}
+
+#social-icons {
+    height: 5em;
+    width: 5em;
+    padding: 1em;
+}
+/* Block color effects added to highlight important contact info in the monochrome */
+#contact-text:hover {
+    background-color: #ee6df7;
+}
+
+#socials-text:hover {
+    background-color: #0dd99f;
+    background-image:none; 
+}
+
+
+footer {
+    height: 15%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #06031d;  
+}
+.contactbox{
+    margin-left: 2%;
+}
+
+.contact  li{
+    color: #0dd99f;
+    list-style-type: none;
+   
+}   
+.contact li a {
+    text-decoration: none;
+}
+
+/* few alterations required for tablet or phone landscape view due to simple 2 section layout */
+@media screen and (min-width: 800px){
+    .center1 {
+        height: 80vw;
+    }
+
+    .hometext {
+        font-size: 1.5em;
+    }
+    header, footer {
+        font-size: 1.5em;
+    }
+}
+/* 2 sections set side-by-side for minimal scrolling in laptop or desktop view*/
+@media screen and (min-width: 1200px){
+    main {
+        width: 100vw;
+        background-color: #06031d;
+        display:flex;
+        flex-direction: column; 
+        justify-content: space-around; 
+    }
+    
+    .center1 {
+  
+        width: 80%
+        
+    }
+    .center2 {
+        display:flex;
+        flex-direction: row;
+        align-items: center; 
+    }
+    
+/* some font alterations to ensure text readable at larger screen sizes */
+
+    .hometext {
+        font-size: 2em;
+    }
+
+    .headernav {
+        font-size: 1.5rem;
+    }
+
+    .homelink{
+        font-size:1.5rem;
+    }
+
+    header, footer {
+        font-size: 1.5em;
+    }
+
+}
+
+
+
+
+
+
+
+
+    
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
