@@ -211,16 +211,6 @@ footer {
     text-decoration: none;
 }
 
-/*animation added for banner pictures*/
-@keyframes picswing {
-    0% {
-        rotate: 0deg;}
-    50%{
-        rotate: -45deg;}
-    100%{
-        rotate: 0deg;}
-}
-
 
 
 
