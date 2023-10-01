@@ -8,7 +8,7 @@
 
 /* min height added to make sure content fills screen, especiallyfor varyign phone models in portrait*/
 body {
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 /* Header style repeated on each page */

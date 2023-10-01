@@ -23,7 +23,7 @@ Image	![alt text](image.jpg)
 
 ### External links:
 
-Portfolio Website
+[Published Portfolio Website](https://www.example.com)
 
 Github Repository
 
@@ -63,8 +63,97 @@ Aesthetic
 The palette uses a variation of the primary triangle in contrast with monochrome. The bright, playful choices reflect my open personlaity and love of learning, whilst still anchored in the sombre tones of the monochrome. The choice of Andale Mono font and rather flat design are also reflective of a DIY aesthetic preference, also indicative of my status as a mid-life career-changer.
 
 ## Sitemap
+![sitemap](sitemap.png)
+
+## Wireframes  
+
+Wireframe Home Page
+![wireframe home](wireframehome.png)
+
+Wireframe Bio
+![wireframe bio](wireframebio.png)
+
+Wireframe Skills
+![wireframe skills](wireframeskills.png)
+
+Wireframe Blog Landing
+![wireframe blog landing](wireframebloglanding.png)   
+
+Wireframe Blog Template
+![wireframe blog template](wireframeblogtemplate.png)
+
+
+
 
 ## Screenshots
+Homepage for mobile
+![homephone](homephonefull.png)
+
+Homepage for tablet
+![hometablet](hometabletfull.png)
+
+Homepage for desktop
+![homedesk](homedesktopfull.png)
+
+Bio for mobile
+![biomobile](biophonefull.png)
+
+Bio for tablet
+![biotablet](biotabletfull.png)
+
+Bio for desktop
+![alt text](biodesktopfull.png)
+
+Skills for mobile
+![skillsmobile](skillsphonefull.png)
+
+Skills for tablet
+![skillstablet](skillstabletfull.png)
+
+Skills for desktop
+![skillsdesktop](skillsdesktopfull.png)
+
+Blog Landing for mobile
+![blogmobile](bloglandingphonefull.png)
+
+Blog Landing for tablet
+![bloglandingtablet](bloglandingtabletfull.png)
+
+Blog Landing for desktop
+![blogdesktop](bloglandingdesktopfull.png)
+
+Blog Language for mobile
+![bloglanguagemobile](bloglanguagephonefull.png)
+
+Blog Language for tablet
+![bloglanguagetablet](bloglanguagetabletfull.png)
+
+Blog Language for desktop
+![bloglanguagedesktop](bloglanguagedesktopfull.png)
+Blog Colour Mixing for mobile
+![blogcolormobile](blogcolorphonefull.png)
+Blog Colour Mixing for tablet
+![blogcolortablet](blogcolortabletfull.png)
+Blog Colour Mixing for desktop
+![blogcolordesktop](blogcolordesktopfull.png)
+Blog Story-telling for mobile
+![blogstorymobile](blogstoryphonefull.png)
+Blog Story-telling for tablet
+![blogstorytablet](blogstorytabletfull.png)
+Blog Story-telling for desktop
+![blogstorydesktop](blogstorydesktopfull.png)
+Blog Circus for mobile
+![blogcircusmobile](blogcircusphonefull.png)
+Blog Circus for tablet
+![blogcircustablet](blogcircustabletfull.png)
+Blog Circus for desktop
+![blogcircusdesktop](blogcircusdesktopfull.png)
+Blog Travel for mobile
+![blogtravelmobile](blogtravelphonefull.png)
+Blog Travel for tablet
+![blogtraveltablet](blogtraveltabletfull.png)
+Blog Travel for desktop
+![blogtraveldesktop](blogtraveldesktopfull.png)
 
 ## Target Audience
 The target audience is made up of potential employers and fellow IT professionals as per the assignment brief. In real-life use, this type of website would be equally valuable as tool for sharing my own projects, connecting and networking with other web development students.
@@ -73,7 +162,7 @@ The target audience is made up of potential employers and fellow IT professional
 
 - Wireframes and Sitemap: draw.io and balsamiq.com
 - website: HTML and CSS
-- Resume building: Canv
+- Resume building: Canva
 - Site Deployment: Vercel
 - Slide deck: Powerpoint
 
