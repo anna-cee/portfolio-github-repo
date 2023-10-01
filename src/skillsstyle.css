@@ -5,10 +5,12 @@
     font-family: Andale Mono, AndaleMono, monospace;
 
 }
-/* min height added to make sure content fills screen, especiallyfor varyign phone models in portrait*/
+
+/* min height added to make sure content fills screen, especiallyfor varying phone models in portrait*/
 body {
     min-height: 100vh;
 }
+
 /*header styling consistent across pages*/
 header{
     display:flex;
@@ -94,6 +96,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-height: 70vh;
     background-color: #fcfbf6;
     
 }
@@ -108,10 +111,10 @@ article {
     
 }
 h2 {
-    padding-bottom: 15%;
+    padding-bottom: 10%;
     padding-top:10%;
     color: #fcfbf6;
-    font-size: 2em;
+    font-size: 1.5em;
 
 }
 .list li{
@@ -144,7 +147,8 @@ h2 {
     background-color: #06031d;
     opacity: 0.7;
     border-radius:50%;
-    width: 60%;
+    width: 60vw;
+    height: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,6 +172,7 @@ h2 {
    flex-direction: row;
    list-style: none;
    width: 50%;
+
    
 }
 
@@ -181,6 +186,9 @@ h2 {
 #social-icons:hover {
    border-bottom:solid 5px #0dd99f;
 }
+
+
+
 
 /* Same footer as throughout for consistent style, with home link added*/
 footer {
@@ -227,6 +235,11 @@ column list, wrapped into a block of 2 rows*/
     article {
         max-width: 40%;
     } 
+    /*resume circle values adjusted to equal vw to keep shape*/
+    #resume {
+        width: 40vw;
+        height: 40vw;
+    }
 }
 /* 2nd media break for tablet in landscape or laptop and desktop.
 all articles into single row triplet
@@ -260,6 +273,7 @@ to make format easy to navigate*/
     #resume h2 {
         color:#f7ef06f9;
         padding: 5% 5%;
+        font-size: 1.5em;
     }
 
     #socialnav {
