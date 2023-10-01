@@ -83,10 +83,11 @@ box shadows added to images reflecting style contrast of monochrome with bright 
 }
 
 .skillshead h1 {
-    font-size: 2.8rem;
     margin: 3vh;
     color:#ee6df7;
     text-shadow: 10px 10px #f7ef06f9;
+    font-weight: bold;
+    font-size: 2.5em;
 }
 
 /*layout of articles in main body specified, center alignment for max responsiveness*/
@@ -114,13 +115,13 @@ h2 {
     padding-bottom: 10%;
     padding-top:10%;
     color: #fcfbf6;
-    font-size: 1.5em;
+    
 
 }
 .list li{
     padding-bottom: 5%;
     color: #fcfbf6;
-    font-weight: bolder
+    font-weight: bolder;
     
 }
 
@@ -209,6 +210,7 @@ footer {
 }   
 .contact li a {
     text-decoration: none;
+    font-size: 0.8em;
 }
 
 /*animation added for banner pictures*/
@@ -255,13 +257,21 @@ final article of resume links extended below in a banner form*/
         padding: 3%;
         height: 25vw;
     }
+
+    h1 {
+        font-size: 4em;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+    }
+    li {
+        font-size: 1.25em;
+    }
     header, footer {
         font-size: 1.5em;
     }
-    h1, h2, {
-        font-size:2rem
-    }
-   
+    
 
 
 /*style changes to final article into row format and color changes 
@@ -279,16 +289,14 @@ to make format easy to navigate*/
     #resume h2 {
         color:#f7ef06f9;
         padding: 5% 5%;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #socialnav {
         height: 20%;
         width: 10%;
+    }
 
-    }
-    header, footer {
-        font-size: 1.5em;
-    }
+   
     
 }

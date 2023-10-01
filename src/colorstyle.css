@@ -265,6 +265,7 @@ footer {
 }   
 .contact li a {
     text-decoration: none;
+    font-size: 0.8em;
 }
 
 /*media break only required from 1000px due to simple layout remaining coherent at small sizes

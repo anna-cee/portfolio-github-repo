@@ -204,6 +204,7 @@ footer {
 }   
 .contact li a {
     text-decoration: none;
+    font-size: 0.8em;
 }
 
 /* media breaks: few alterations required for tablet or phone landscape view due to simple 2 section layout */
